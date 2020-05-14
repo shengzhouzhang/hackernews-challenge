@@ -1,0 +1,16 @@
+{
+  "name": "hackernews-bff",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "@types/node-fetch": "2.5.7",
+    "express": "4.17.1",
+    "node-fetch": "2.6.0",
+    "ts-node": "8.10.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.6"
+  }
+}
