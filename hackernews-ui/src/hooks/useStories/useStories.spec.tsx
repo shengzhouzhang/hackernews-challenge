@@ -1,10 +1,10 @@
 import { renderHook } from '@testing-library/react-hooks';
 
-import { fetchStoryWithCache } from '../../services/bff';
+import { fetchStoryWithCache } from 'src/services/bff';
 
 import { useStories } from './useStories';
 
-jest.mock('../../services/bff');
+jest.mock('src/services/bff');
 
 describe('useComments', () => {
   const stories = [

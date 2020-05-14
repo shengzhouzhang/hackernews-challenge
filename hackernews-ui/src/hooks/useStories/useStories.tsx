@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Story } from '../../types/story';
+import { Story } from 'src/types/story';
 
-import { fetchStoryWithCache } from '../../services/bff';
+import { fetchStoryWithCache } from 'src/services/bff';
 
 interface Response {
   data: {

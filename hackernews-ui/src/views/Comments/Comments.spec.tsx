@@ -4,11 +4,11 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
-import { useComments } from '../../hooks/useComments/useComments';
+import { useComments } from 'src/hooks/useComments/useComments';
 
 import { Comments } from './Comments';
 
-jest.mock('../../hooks/useComments/useComments');
+jest.mock('src/hooks/useComments/useComments');
 
 describe('Comments component', () => {
   const comments = [

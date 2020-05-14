@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Author } from '../Author/Author';
-import { Link } from '../Link/Link';
-import { Time } from '../Time/Time';
+import { Author } from 'src/components/Author/Author';
+import { Link } from 'src/components/Link/Link';
+import { Time } from 'src/components/Time/Time';
 
 import styles from './Story.module.css';
 

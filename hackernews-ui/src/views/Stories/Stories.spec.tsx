@@ -4,10 +4,10 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
-import { useStories } from '../../hooks/useStories/useStories';
+import { useStories } from 'src/hooks/useStories/useStories';
 import { Stories } from './Stories';
 
-jest.mock('../../hooks/useStories/useStories');
+jest.mock('src/hooks/useStories/useStories');
 
 describe('Stories component', () => {
   const stories = [

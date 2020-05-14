@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { useStories } from '../../hooks/useStories/useStories';
-import { App } from '../../components/App/App';
-import { Story } from '../../components/Story/Story';
+import { useStories } from 'src/hooks/useStories/useStories';
+import { App } from 'src/components/App/App';
+import { Story } from 'src/components/Story/Story';
 
 export const Stories = () => {
   const { data, error, loading } = useStories();

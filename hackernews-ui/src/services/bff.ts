@@ -1,5 +1,5 @@
-import { Story } from '../types/story';
-import { Comment } from '../types/comment';
+import { Story } from 'src/types/story';
+import { Comment } from 'src/types/comment';
 
 const BFF_URI = 'http://localhost:3001';
 

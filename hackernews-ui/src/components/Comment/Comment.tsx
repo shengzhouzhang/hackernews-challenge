@@ -1,8 +1,8 @@
 import React, { useState, useCallback, SyntheticEvent, Fragment } from 'react';
 
-import { Author } from '../Author/Author';
-import { Time } from '../Time/Time';
-import { Fold } from '../Fold/Fold';
+import { Author } from 'src/components/Author/Author';
+import { Time } from 'src/components/Time/Time';
+import { Fold } from 'src/components/Fold/Fold';
 
 import styles from './Comment.module.css';
 

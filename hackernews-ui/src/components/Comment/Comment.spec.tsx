@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 
 import { Comment } from './Comment';
 
-jest.mock('../../hooks/useStories/useStories');
+jest.mock('src/hooks/useStories/useStories');
 
 describe('Story component', () => {
   const comment = {
