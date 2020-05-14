@@ -1,7 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import { stories } from './routes/stories';
-import { comments } from './routes/comments';
+
+import { stories } from 'src/routes/stories';
+import { comments } from 'src/routes/comments';
 
 const app = express();
 const port = 3001;

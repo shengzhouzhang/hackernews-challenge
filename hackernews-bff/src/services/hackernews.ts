@@ -1,6 +1,7 @@
-import { fetch } from './fetch';
-import { Story } from '../types/story';
-import { Comment } from '../types/comment';
+import { Story } from '@ui/types/story';
+import { Comment } from '@ui/types/comment';
+
+import { fetch } from 'src/services/fetch';
 
 const URI = 'https://hacker-news.firebaseio.com/v0';
 

@@ -1,4 +1,4 @@
-import { fetch } from './fetch';
+import { fetch } from 'src/services/fetch';
 import { fetchStories, fetchCommentsByStoryId } from './hackernews';
 
 jest.mock('./fetch');

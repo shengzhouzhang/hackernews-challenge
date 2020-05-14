@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { fetchStories } from '../services/hackernews';
+import { fetchStories } from 'src/services/hackernews';
 
 export const stories = async (req: Request, res: Response): Promise<void> => {
   try {

@@ -9,7 +9,10 @@
     "allowJs": false,
     "outDir": "dist",
     "strictNullChecks": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../hackernews-ui/src/*"]
+    }
   },
   "include": ["src"],
 }
