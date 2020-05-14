@@ -9,13 +9,13 @@ jest.mock('../../hooks/useStories/useStories');
 
 describe('Story component', () => {
   const comment = {
-    "by" : "norvig",
-    "id" : 2921983,
-    "kids" : [ ],
-    "parent" : 2921506,
-    "text" : "hello",
-    "time" : 1314211127,
-    "type" : "comment"
+    by: 'norvig',
+    id: 2921983,
+    kids: [],
+    parent: 2921506,
+    text: 'hello',
+    time: 1314211127,
+    type: 'comment',
   };
 
   test('should render text and the author', () => {

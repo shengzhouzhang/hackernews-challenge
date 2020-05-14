@@ -9,7 +9,5 @@ interface Props {
 }
 
 export const Author = ({ className, children }: Props) => (
-  <div className={classNames(styles.author, className)}>
-    {children}
-  </div>
-)
+  <div className={classNames(styles.author, className)}>{children}</div>
+);

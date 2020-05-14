@@ -5,10 +5,10 @@ import { fetchStoryWithCache } from '../../services/bff';
 
 interface Response {
   data: {
-    stories: Story[],
-  } | null,
-  error: Error | null,
-  loading: boolean,
+    stories: Story[];
+  } | null;
+  error: Error | null;
+  loading: boolean;
 }
 
 export const useStories = (): Response => {
@@ -22,7 +22,7 @@ export const useStories = (): Response => {
         setStories(stories);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err);
         setLoading(false);
       });

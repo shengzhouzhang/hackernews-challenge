@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "test": "jest src/**",
-    "lint": "eslint 'src/**'"
+    "format": "eslint 'src/**' --fix"
   },
   "dependencies": {
     "@types/node-fetch": "2.5.7",

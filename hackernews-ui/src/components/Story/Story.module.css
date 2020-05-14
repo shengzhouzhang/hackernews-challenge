@@ -1,4 +1,3 @@
-
 .story {
   position: relative;
   display: flex;
@@ -11,7 +10,7 @@
 .story::before {
   position: absolute;
   left: 1rem;
-  content: counter(my-awesome-counter) ".";
+  content: counter(my-awesome-counter) '.';
   font-size: 1.125rem;
   line-height: 1.5;
 }

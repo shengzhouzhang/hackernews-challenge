@@ -5,10 +5,10 @@ import { fetchCommentsWithCache } from '../../services/bff';
 
 interface Response {
   data: {
-    comments: Comment[],
-  } | null,
-  error: Error | null,
-  loading: boolean,
+    comments: Comment[];
+  } | null;
+  error: Error | null;
+  loading: boolean;
 }
 
 export const useComments = (id: number): Response => {
@@ -22,7 +22,7 @@ export const useComments = (id: number): Response => {
         setComments(comments);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err);
         setLoading(false);
       });

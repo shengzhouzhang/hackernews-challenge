@@ -13,16 +13,11 @@ export const Comments = () => {
   return (
     <App>
       <Link to="/">&lt;&lt; back</Link>
-      {
-        data?.comments.map((comment) => (
-          <Comment
-            key={`comment-${comment.id}`}
-            {...comment}
-          />
-        ))
-      }
-      { loading ? (<div>loading...</div>) : null }
-      { !!error ? (<div>Something went wrong</div>) : null }
+      {data?.comments.map((comment) => (
+        <Comment key={`comment-${comment.id}`} {...comment} />
+      ))}
+      {loading ? <div>loading...</div> : null}
+      {!!error ? <div>Something went wrong</div> : null}
     </App>
-  )
+  );
 };

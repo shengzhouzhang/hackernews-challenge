@@ -7,12 +7,12 @@ import { Time } from '../Time/Time';
 import styles from './Story.module.css';
 
 interface Props {
-  id: number,
-  title: string,
-  descendants: number,
-  time: number,
-  by: string,
-  score: number,
+  id: number;
+  title: string;
+  descendants: number;
+  time: number;
+  by: string;
+  score: number;
 }
 
 export const Story = ({ id, title, time, by, score, descendants }: Props) => {
@@ -26,5 +26,5 @@ export const Story = ({ id, title, time, by, score, descendants }: Props) => {
       <Time>{time}</Time>
       <div className={styles.descendants}>{descendants} comments</div>
     </div>
-  )
+  );
 };
