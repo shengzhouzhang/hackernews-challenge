@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Comment } from '../types/comment';
+import { Comment } from '../../types/comment';
 
-import { fetchCommentsWithCache } from '../services/bff';
+import { fetchCommentsWithCache } from '../../services/bff';
 
 interface Response {
   data: {
