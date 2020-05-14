@@ -1,0 +1,29 @@
+
+.story {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.75rem 1rem 0.75rem 3.5rem;
+
+  counter-increment: my-awesome-counter;
+}
+
+.story::before {
+  position: absolute;
+  left: 1rem;
+  content: counter(my-awesome-counter) ".";
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.title {
+  flex: 1 1 100%;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.score,
+.descendants {
+  color: #828282;
+  padding: 0.25rem 0.75rem 0.25rem 0;
+}

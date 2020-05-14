@@ -1,10 +1,10 @@
 import { renderHook } from '@testing-library/react-hooks'; 
 
-import { fetchCommentsWithCache } from 'src/services/hackernews';
+import { fetchCommentsWithCache } from 'src/services/bff';
 
 import { useComments } from './useComments';
 
-jest.mock('src/services/hackernews');
+jest.mock('src/services/bff');
 
 describe('useComments', () => {
   const storyId = 8863;

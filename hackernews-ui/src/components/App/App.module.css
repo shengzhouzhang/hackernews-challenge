@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: beige;
+  padding: 1rem 0;
+}
+
+.content {
+  max-width: 1140px;
+  flex: 1;
+  background: antiquewhite;
+  padding: 1rem;
+
+  color: #666666;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 0.5rem;
+  }
+}

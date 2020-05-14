@@ -1,11 +1,13 @@
 {
   "name": "hackernews-bff",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
     "@types/node-fetch": "2.5.7",
+    "cors": "2.8.5",
     "express": "4.17.1",
     "node-fetch": "2.6.0",
     "ts-node": "8.10.1"
