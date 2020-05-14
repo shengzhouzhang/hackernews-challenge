@@ -1,9 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useComments } from 'src/hooks/useComments/useComments';
-import { App } from 'src/components/App/App';
-import { Comment } from 'src/components/Comment/Comment';
-import { Link } from 'src/components/Link/Link';
+
+import { useComments } from '../../hooks/useComments/useComments';
+import { App } from '../../components/App/App';
+import { Comment } from '../../components/Comment/Comment';
+import { Link } from '../../components/Link/Link';
 
 export const Comments = () => {
   const { storyId } = useParams();

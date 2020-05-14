@@ -5,10 +5,10 @@ import {
   Route,
 } from "react-router-dom";
 
-import { Stories } from 'src/views/Stories/Stories';
-import { Comments } from 'src/views/Comments/Comments';
+import { Stories } from './views/Stories/Stories';
+import { Comments } from './views/Comments/Comments';
 
-import 'src/App.css';
+import './App.css';
 
 export const Router = () => (
   <BrowserRouter>
