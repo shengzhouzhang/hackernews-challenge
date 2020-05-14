@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { fetchCommentsByStoryId } from '../services/hackernews';
 
-export const comments = async (req: Request, res: Response): void => {
+export const comments = async (req: Request, res: Response): Promise<void> => {
   try {
     const { storyId } = req.params;
     const comments = await fetchCommentsByStoryId(storyId);
