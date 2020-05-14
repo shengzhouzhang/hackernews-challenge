@@ -15,8 +15,6 @@ export const Stories = () => {
     return (<App>something went wrong</App>)
   }
 
-  console.log(data);
-
   return (
     <App>
       {
