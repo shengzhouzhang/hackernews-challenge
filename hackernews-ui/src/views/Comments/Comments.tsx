@@ -8,13 +8,7 @@ import { Link } from '../../components/Link/Link';
 
 export const Comments = () => {
   const { storyId } = useParams();
-  
-  
-  const { data, error } = useComments(storyId);
-
-  if(error) {
-    return (<App>Something went wrong</App>);
-  }
+  const { data, error, loading } = useComments(storyId);
 
   return (
     <App>
@@ -27,6 +21,8 @@ export const Comments = () => {
           />
         ))
       }
+      { loading ? (<div>loading...</div>) : null }
+      { !!error ? (<div>Something went wrong</div>) : null }
     </App>
   )
 };

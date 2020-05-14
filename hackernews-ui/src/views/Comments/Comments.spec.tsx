@@ -30,4 +30,20 @@ describe('Comments component', () => {
     expect(getByText(comments[0].text)).toBeInTheDocument();
     expect(getByText(comments[0].by)).toBeInTheDocument();
   });
+
+  test('should render loading status', () => {
+    (useComments as jest.Mock).mockReturnValue({ data: null, loading: true, error: null });
+
+    const { getByText } = render(<BrowserRouter><Comments /></BrowserRouter>);
+    
+    expect(getByText('loading...')).toBeInTheDocument();
+  });
+
+  test('should render error status', () => {
+    (useComments as jest.Mock).mockReturnValue({ data: null, loading: false, error: new Error('test') });
+
+    const { getByText } = render(<BrowserRouter><Comments /></BrowserRouter>);
+    
+    expect(getByText('Something went wrong')).toBeInTheDocument();
+  });
 });

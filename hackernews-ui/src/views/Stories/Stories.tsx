@@ -7,14 +7,6 @@ import { Story } from '../../components/Story/Story';
 export const Stories = () => {
   const { data, error, loading } = useStories();
   
-  if (loading) {
-    return (<App>loading...</App>)
-  }
-
-  if (error) {
-    return (<App>something went wrong</App>)
-  }
-
   return (
     <App>
       {
@@ -30,6 +22,8 @@ export const Stories = () => {
           />
         ))
       }
+      { loading ? (<div>loading...</div>) : null }
+      { !!error ? (<div>Something went wrong</div>) : null }
     </App>
   )
 };

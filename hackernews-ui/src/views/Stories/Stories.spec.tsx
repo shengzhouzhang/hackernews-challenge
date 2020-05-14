@@ -32,4 +32,20 @@ describe('Stories component', () => {
     expect(getByText(`by ${stories[0].by}`)).toBeInTheDocument();
     expect(getByText(`${stories[0].descendants} comments`)).toBeInTheDocument();
   });
+
+  test('should render loading status', () => {
+    (useStories as jest.Mock).mockReturnValue({ data: null, loading: true, error: null });
+
+    const { getByText } = render(<BrowserRouter><Stories /></BrowserRouter>);
+    
+    expect(getByText('loading...')).toBeInTheDocument();
+  });
+
+  test('should render error status', () => {
+    (useStories as jest.Mock).mockReturnValue({ data: null, loading: false, error: new Error('test') });
+
+    const { getByText } = render(<BrowserRouter><Stories /></BrowserRouter>);
+    
+    expect(getByText('Something went wrong')).toBeInTheDocument();
+  });
 });
