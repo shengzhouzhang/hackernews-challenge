@@ -1,10 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Stories } from './views/Stories/Stories';
-import { Comments } from './views/Comments/Comments';
-
-import './App.css';
+import { Stories } from 'src/views/Stories/Stories';
+import { Comments } from 'src/views/Comments/Comments';
 
 export const Router = () => (
   <BrowserRouter>
