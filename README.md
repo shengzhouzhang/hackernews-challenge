@@ -1,7 +1,7 @@
 This project was set up with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/). It contains two parts: 
 
-- `hackernews-ui`, it is a [create-create-app](https://github.com/facebook/create-react-app) with `typescrpit`
-- `hackernews-bff`, it is written with `express` and `typescrpit`
+- `hackernews-ui`, it is a [create-create-app](https://github.com/facebook/create-react-app) with `typescript`
+- `hackernews-bff`, it is written with `express` and `typescript`
 
 ### Run Unit Tests
 
