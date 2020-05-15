@@ -19,3 +19,24 @@ This project was set up with [yarn workspaces](https://classic.yarnpkg.com/en/do
 
 - Run `yarn start:bff` to start bff.
 - Run `yarn start:ui` to start ui.
+
+#### Files Overview
+
+```
+hackernews-bff/
+-- src/
+---- server.ts            // express server file
+---- routes/              // endpoints
+---- services/            // request client for hackernews api
+
+hackernews-ui/
+-- src/
+---- index.tsx            // entry file
+---- components/          // react components
+---- hooks/               // react hooks
+---- views/               // web pages
+---- types/               // types definition
+---- services/            // request client for bff api
+```
+
+*Note: Unit test files are named as `.spec.ts(x)` next to the target file.*

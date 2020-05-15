@@ -15,7 +15,7 @@ describe('Stories component', () => {
       by: 'dhouston',
       descendants: 71,
       id: 8863,
-      kids: [ 8952 ],
+      kids: [8952],
       score: 111,
       time: 1175714200,
       title: 'My YC app: Dropbox - Throw away your USB drive',
