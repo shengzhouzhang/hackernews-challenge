@@ -10,6 +10,7 @@
 }
 
 .text {
+  overflow: hidden;
   flex: 1 1 100%;
   font-size: 1rem;
   line-height: 1.5;
